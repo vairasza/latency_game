@@ -72,12 +72,12 @@ class LCircle:
     '''
     dy = (self.circle.y - y)
     dx = (self.circle.x - x)
-    distance_fingers = math.sqrt(dy ** 2 + dx ** 2 )
+    distance = math.sqrt(dy ** 2 + dx ** 2 )
 
-    if distance_fingers <= self.circle.radius:
+    if distance <= self.circle.radius:
       return time.time() - self._start_time
     else: 
-      return - 1.0
+      return -1.0
 
 
 class Application:
